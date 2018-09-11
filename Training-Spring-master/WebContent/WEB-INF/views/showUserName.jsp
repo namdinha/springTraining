@@ -6,7 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <style>
     body{
@@ -24,14 +23,7 @@
 </head>
 <body>
     <div>
-        <h1>Welcome to your training</h1>
+        <h1>Welcome to your ${user.name}</h1>
     </div>
-    <form:form modelAttribute="user" action="/showUserName" name="user" method="post">
-        <label for="name">Name:</label>
-        <input id="name" type="text" name="name">
-        <label for="email">Email:</label>
-        <input id="email" type="text" name="email">
-        <button type="submit">Send</button>
-    </form:form>
 </body>
 </html>
