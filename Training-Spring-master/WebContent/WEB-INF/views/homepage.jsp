@@ -33,5 +33,11 @@
         <input id="email" type="text" name="email">
         <button type="submit">Send</button>
     </form:form>
+    <form:form action="/createUser" method="get">
+        <button type="submit">Create User</button>
+    </form:form>
+    <form:form action="/showUsers" method="get">
+        <button type="submit">Show Users</button>
+    </form:form>
 </body>
 </html>

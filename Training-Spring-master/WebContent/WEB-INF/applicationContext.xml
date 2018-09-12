@@ -11,4 +11,10 @@
     <bean name="userDao" class="com.sap.Dao.impl.UserDaoImp">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+    <bean name="userService" class="com.sap.Service.UserService">
+        <constructor-arg ref="hibernateUserDao"></constructor-arg>
+    </bean>
+    <bean name="hibernateUserDao" class="com.sap.Dao.impl.UserDaoImp">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 </beans>
